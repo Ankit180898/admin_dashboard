@@ -1,7 +1,5 @@
-# admin_dashboard
-<<<<<<< HEAD
+
 An admin dashboard UI build in flutter web.
-=======
 
 A new Flutter project.
 
