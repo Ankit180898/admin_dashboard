@@ -16,27 +16,24 @@ class SearchBarView extends StatelessWidget {
         child: TextField(
           onChanged: onSearch, // Trigger search on text change
           decoration: InputDecoration(
-            filled: true,
-            focusColor: null,
+            enabledBorder: InputBorder.none,
             prefixIcon: Padding(
-              padding: const EdgeInsets.symmetric(
+              padding: EdgeInsets.symmetric(
                   horizontal: 16), // Adjust horizontal padding
-              child: const Icon(
+              child: Icon(
                 Icons.search,
-                color: Colors.black,
+                color: textColor,
                 size: 24, // Adjust icon size
               ),
             ),
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(20), // Adjust border radius
-            ),
+
             hintText: 'Search...',
             hintStyle: const TextStyle(
-                color: Colors.black, fontSize: 16), // Adjust font size
+                color: textColor, fontSize: 16), // Adjust font size
             contentPadding: const EdgeInsets.symmetric(
                 horizontal: 12, vertical: 12), // Adjust content padding
           ),
-          cursorColor: Colors.black,
+          cursorColor: textColor,
           style: normalText(16),
           cursorHeight: 20, // Adjust cursor height
         ),
